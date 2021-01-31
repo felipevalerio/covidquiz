@@ -6,7 +6,7 @@
       {
         "image": "https://image.freepik.com/vetores-gratis/conceito-de-desinfeccao_1212-1045.jpg",
         "title": "Qual é a porcentagem de álcool em gel, recomendada contra o Covid?",
-        "description": "Essa é pra aquecer",
+        "description": " ",
         "answer": 2,
         "alternatives": [
           "30%",
@@ -18,7 +18,7 @@
       {
         "image": "https://media.istockphoto.com/vectors/medical-mask-icon-protection-against-viruses-and-diseases-transmitted-vector-id1201386847?k=6&m=1201386847&s=612x612&w=0&h=b1MbT15RYkPcnq79bWdoEhKqR3ggFo4wt4VDmzIkX2w=",
         "title": "O modo correto de se usar a máscara é...",
-        "description": "Essa você tem que saber",
+        "description": " ",
         "answer": 0,
         "alternatives": [
            "Cobrindo nariz e boca",
@@ -30,13 +30,13 @@
       {
         "image": "https://thumbs.dreamstime.com/b/social-distancing-icon-vector-any-purposes-coronavirus-preventing-self-protection-178409522.jpg",
         "title": "Qual é o distanciamento mínimo recomendado entre duas pessoas?",
-        "description": "O esquecido distanciamento social",
+        "description": " ",
         "answer": 3,
         "alternatives": [
            "3 metros",
            "1 metro",
            "5 metros",
-           "1,5 metro"
+           "2 metros"
         ]
       },
       {
@@ -82,7 +82,7 @@
            "50%",
            "30%",
            "90%",
-           "30%"
+           "40%"
         ]
       }
     ],
