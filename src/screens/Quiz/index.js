@@ -1,17 +1,17 @@
 import React, { useState, useEffect } from 'react';
-import db from '../db.json';
-import Widget from '../src/components/Widget';
-import Button from '../src/components/Button';
-import QuizLogo from '../src/components/QuizLogo';
-import QuizContainer from '../src/components/QuizContainer';
-import QuizBackground from '../src/components/QuizBackground';
-import AlternativesForm from '../src/components/AlternativesForm';
+//import db from '../../../db.json';
+import Widget from '../../components/Widget';
+import Button from '../../components/Button';
+import QuizLogo from '../../components/QuizLogo';
+import QuizContainer from '../../components/QuizContainer';
+import QuizBackground from '../../components/QuizBackground';
+import AlternativesForm from '../../components/AlternativesForm';
 
 function ResultWidget({ results }) {
     return (
         <Widget>
             <Widget.Header>
-                Tela de Resultado
+            Tela de Resultado
             </Widget.Header>
 
             <Widget.Content>
@@ -135,11 +135,6 @@ function QuestionWidget({
                         );
                     })}
 
-                    {/*
-                    <pre>
-                        {JSON.stringify(question, null, 4)}
-                    </pre> */}
-
                     <Button type="submit" disabled={!hasAlternativeSelected}>
                         Confirmar
                     </Button>
@@ -158,14 +153,15 @@ const screenStates = {
     RESULT: 'RESULT',
 };
 
-export default function QuizPage() {
+export default function QuizPage({ externalQuestions, externalBg }) {
 
     const [currentQuestion, setCurrentQuestion] = useState(0);
     const [screenState, setScreenState] = useState(screenStates.LOADING);
     const [results, setResults] = useState([]);
     const questionIndex = currentQuestion;
-    const question = db.questions[questionIndex];
-    const totalQuestions = db.questions.length;
+    const question = externalQuestions[questionIndex];
+    const totalQuestions = externalQuestions.length;
+    const bg = externalBg;
 
 
     function addResult(result) {
@@ -192,7 +188,7 @@ export default function QuizPage() {
     }
 
     return (
-        <QuizBackground backgroundImage={db.bg}>
+        <QuizBackground backgroundImage={bg}>
             <QuizContainer>
                 <QuizLogo />
 
